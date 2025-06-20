@@ -3,16 +3,42 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: #f0f0f0;
     max-width: 800px;
-    margin: 0 auto;
+    min-height: 100vh;
+    background-color: #f0f0f0;
     font-family: system-ui;
-    place-items:  center;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    gap: 1rem;
+}
 
-section img {
-    max-width: 400px;
+ img {
+    max-width: 450px;
     height: auto;
+}
+
+.button-search {
+  border: none; 
+  color: black; 
+  padding: 14px 28px; 
+  cursor: pointer; 
+  border-radius: 5px;    
+  background-color: white;
+  border: 2px solid #457a4d;
+}
+
+.button-search:hover {
+  background: #5ea268; 
+  color: white;
+}
+
+p {
+  padding: 10px;
+  text-align: center;
 }
