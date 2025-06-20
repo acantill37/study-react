@@ -14,12 +14,14 @@ export function App() {
 
     return (
         <main>
+            <section>
             <h1>App de gatitos</h1>
 
             <button className="button-search" onClick={handleClick}>Get new fact</button>
 
             {fact && <p>{fact}</p>}
             {imageUrl && <img src={imageUrl} alt={`Image extracted using the first three words for ${fact}`} />}
+            </section>
         </main>
     );
 }
